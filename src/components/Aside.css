@@ -1,0 +1,44 @@
+aside {
+    width: 300px;
+    height: 100vh;
+    color: #252525;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+
+    header {
+        h2 {
+            font-size: 24px;
+            color: #6122b4;
+            line-height: 1.1;
+        }
+    }
+
+    main {
+        flex: 1;
+        background-color: #6122b4;
+        width: 100%;
+    }
+
+}
+
+.module {
+    display: flex;
+    gap: 10px;
+    color: #252525;
+    background-color: #f0f0f0;
+    margin: 5px 0;
+
+    &:hover {
+        background-color: black;
+        color: #fff;
+    }
+
+
+}
+
+.module.active {
+    background-color: #00ff11;
+}
