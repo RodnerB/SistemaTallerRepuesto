@@ -1,19 +1,17 @@
 import { useState } from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Aside from './components/Aside'
-import Main from './components/Main'
+import Main from './pages/Main'
+import Layout from './layout/Layout.jsx'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <Router>
-        <Aside />
+        <Layout />
         <Routes>
           <Route path="/" element={<Main />} />
-          <Route path="*" element={<h1>Error 404: Erick t el chino son gay</h1>} />
+          <Route path="*" element={<h1>Error 404: Página no encontrada</h1>} />
         </Routes>
       </Router>
     </>
