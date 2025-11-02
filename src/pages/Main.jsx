@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Main.css'
-import ShoppingCart from '../assets/shoppingCart';
-import PlusIcon from '../assets/plusIcon';
+import ShoppingCart from '../assets/ShoppingCart.jsx';
+import PlusIcon from '../assets/PlusIcon.jsx';
 function Main() {
     return (
         <main className='main'>
