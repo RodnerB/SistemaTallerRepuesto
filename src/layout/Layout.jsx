@@ -1,18 +1,22 @@
 import { NavLink } from 'react-router-dom'
 import './Layout.css'
+import { CarIcon } from '../assets/CarIcon'
+
 function Aside() {
     const activeStyle = ( isActive ) => {
-        return (` module ${isActive ? "active" : ""}`)
+        return (` modules ${isActive ? "active" : ""}`)
     }
     
     return (
         <aside>
             <header>
+                <CarIcon />
                 <h2>
-                    Electromecanica y AutoRepuesto Neno
+                    Taller y Repuesto
                 </h2>
             </header>
-            <main>
+            <section>
+                <h3>Modulos</h3>
                 <NavLink to="/" className={({ isActive }) => activeStyle(isActive)} >
                     <h4>Panel Principal</h4>
                 </NavLink>
@@ -23,7 +27,7 @@ function Aside() {
                     <h4>Inventario</h4>
                 </NavLink>
 
-            </main>
+            </section>
         </aside>
     )
 }
