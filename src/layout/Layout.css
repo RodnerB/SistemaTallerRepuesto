@@ -1,29 +1,59 @@
 aside {
-    width: 300px;
+    width: 250px;
     height: 100vh;
-    padding:  0 10px;
-    color: #252525;
-    background-color: #f0f0f0;
+    padding:10px;
+    background-color: var(--main-bg-color);
     display: flex;
     flex-direction: column;
     text-align: left;
-}
+    border-right: 2px solid var(--border-color);
 
-.module {
-    display: flex;
-    gap: 10px;
-    color: #252525;
-    background-color: #f0f0f0;
-    margin: 5px 0;
+    > header{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--main-color);
 
-    &:hover {
-        background-color: black;
-        color: #fff;
+        > h2{
+            font-size: 1.125rem;
+            color: inherit;
+        }
+
+        > .carIcon{
+            width: 1.625rem;
+            height: auto;
+            stroke: var(--main-color);
+        }
     }
 
+    > section {
+        
+        text-decoration: none;
+        > h3{
+            
+            color: var(--text-color);
+            font-size: 1rem;
+        }
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
 
-}
 
-.module.active {
-    background-color: #00ff11;
+        .modules {
+            text-decoration: none;
+            color: var(--dark-text-color);
+            font-size: 1rem;
+            line-height: 1.5;
+            padding: 0 0 0 10px;
+            border-radius: 8px;
+
+            &.active{
+                background-color: var(--selected-color);
+                color: var(--selected-text-color);
+            }
+            &:hover{
+                background-color: var(--hover-bg-color);
+            }
+        }
+    }
 }
