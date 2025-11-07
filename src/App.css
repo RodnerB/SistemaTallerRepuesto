@@ -23,12 +23,16 @@
   --bg-color: #F6F6F6;
   --border-color: #D3D6DB;
   --check-color: #009C00;
-  
+  --exit-color: #DF3201
 }
 #root {
   color: var(--primary-text-color);
   display: flex;
   background-color: var(--bg-color);
+}
+
+button, a{
+  cursor: pointer;
 }
 
 .main{
@@ -43,3 +47,15 @@
   transition: filter 300ms;
 }
 
+.btn-salir{
+  display: flex;
+  align-items: center;
+  border: none;
+  color: var(--dark-text-color);
+  background-color: transparent;
+
+}
+
+.btn-salir:hover{
+  color: var(--exit-color);
+}
