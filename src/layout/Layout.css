@@ -51,7 +51,7 @@ aside {
                 background-color: var(--selected-color);
                 color: var(--selected-text-color);
             }
-            &:hover{
+            &:not(.active):hover{
                 background-color: var(--hover-bg-color);
             }
         }
