@@ -4,6 +4,7 @@ import './App.css'
 import Main from './pages/Main'
 import Layout from './layout/Layout.jsx'
 import NotFound from './pages/404.jsx'
+import Venta from './pages/Venta.jsx'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Layout />
         <Routes>
           <Route path="/" element={<Main />} />
+          <Route path="/venta" element={<Venta />} />
           <Route path="*" element={<NotFound/>} />
         </Routes>
       </Router>

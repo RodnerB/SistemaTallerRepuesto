@@ -20,7 +20,7 @@ function Aside() {
                 <NavLink to="/" className={({ isActive }) => activeStyle(isActive)} >
                     <h4>Panel Principal</h4>
                 </NavLink>
-                <NavLink to="/ventas" className={({ isActive }) => activeStyle(isActive)} >
+                <NavLink to="/venta" className={({ isActive }) => activeStyle(isActive)} >
                     <h4>Ventas</h4>
                 </NavLink>
                 <NavLink to="/inventario" className={({ isActive }) => activeStyle(isActive)} >
