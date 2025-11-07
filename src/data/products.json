@@ -1,0 +1,204 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Aceite de Motor 5W-30",
+      "category": "Lubricantes",
+      "price": 45.50,
+      "stock": 25,
+      "brand": "Castrol",
+      "description": "Aceite sintético para motor de alto rendimiento",
+      "sku": "ACE-5W30-001"
+    },
+    {
+      "id": 2,
+      "name": "Batería 12V 60Ah",
+      "category": "Eléctrico",
+      "price": 120.00,
+      "stock": 10,
+      "brand": "Bosch",
+      "description": "Batería de arranque para vehículos",
+      "sku": "BAT-12V-002"
+    },
+    {
+      "id": 3,
+      "name": "Pastillas de Freno Delanteras",
+      "category": "Frenos",
+      "price": 65.00,
+      "stock": 15,
+      "brand": "Brembo",
+      "description": "Pastillas de freno cerámicas para mejor frenado",
+      "sku": "FRE-PAST-003"
+    },
+    {
+      "id": 4,
+      "name": "Filtro de Aceite",
+      "category": "Filtros",
+      "price": 12.50,
+      "stock": 50,
+      "brand": "Mann",
+      "description": "Filtro de aceite de alta eficiencia",
+      "sku": "FIL-ACE-004"
+    },
+    {
+      "id": 5,
+      "name": "Bujías de Platino",
+      "category": "Encendido",
+      "price": 28.00,
+      "stock": 40,
+      "brand": "NGK",
+      "description": "Set de 4 bujías de platino de larga duración",
+      "sku": "BUJ-PLAT-005"
+    },
+    {
+      "id": 6,
+      "name": "Líquido Refrigerante 1L",
+      "category": "Refrigeración",
+      "price": 15.00,
+      "stock": 30,
+      "brand": "Total",
+      "description": "Líquido refrigerante anticongelante",
+      "sku": "REF-LIQ-006"
+    },
+    {
+      "id": 7,
+      "name": "Correa de Distribución",
+      "category": "Transmisión",
+      "price": 85.00,
+      "stock": 12,
+      "brand": "Gates",
+      "description": "Correa de distribución reforzada",
+      "sku": "TRANS-COR-007"
+    },
+    {
+      "id": 8,
+      "name": "Amortiguadores Traseros",
+      "category": "Suspensión",
+      "price": 180.00,
+      "stock": 8,
+      "brand": "Monroe",
+      "description": "Par de amortiguadores hidráulicos traseros",
+      "sku": "SUSP-AMO-008"
+    },
+    {
+      "id": 9,
+      "name": "Kit de Embrague",
+      "category": "Transmisión",
+      "price": 250.00,
+      "stock": 5,
+      "brand": "LuK",
+      "description": "Kit completo de embrague con disco y plato",
+      "sku": "TRANS-EMB-009"
+    },
+    {
+      "id": 10,
+      "name": "Filtro de Aire",
+      "category": "Filtros",
+      "price": 18.00,
+      "stock": 35,
+      "brand": "K&N",
+      "description": "Filtro de aire de alto flujo",
+      "sku": "FIL-AIR-010"
+    },
+    {
+      "id": 11,
+      "name": "Alternador 90A",
+      "category": "Eléctrico",
+      "price": 220.00,
+      "stock": 6,
+      "brand": "Valeo",
+      "description": "Alternador de 90 amperios reconstruido",
+      "sku": "ELEC-ALT-011"
+    },
+    {
+      "id": 12,
+      "name": "Radiador de Aluminio",
+      "category": "Refrigeración",
+      "price": 320.00,
+      "stock": 4,
+      "brand": "Denso",
+      "description": "Radiador de aluminio de alta capacidad",
+      "sku": "REF-RAD-012"
+    },
+    {
+      "id": 13,
+      "name": "Discos de Freno Ventilados",
+      "category": "Frenos",
+      "price": 95.00,
+      "stock": 10,
+      "brand": "ATE",
+      "description": "Par de discos de freno ventilados delanteros",
+      "sku": "FRE-DISC-013"
+    },
+    {
+      "id": 14,
+      "name": "Motor de Arranque",
+      "category": "Eléctrico",
+      "price": 180.00,
+      "stock": 7,
+      "brand": "Bosch",
+      "description": "Motor de arranque reconstruido",
+      "sku": "ELEC-ARR-014"
+    },
+    {
+      "id": 15,
+      "name": "Neumático 195/65 R15",
+      "category": "Neumáticos",
+      "price": 95.00,
+      "stock": 20,
+      "brand": "Michelin",
+      "description": "Neumático radial para automóvil",
+      "sku": "NEUM-195-015"
+    },
+    {
+      "id": 16,
+      "name": "Bomba de Agua",
+      "category": "Refrigeración",
+      "price": 75.00,
+      "stock": 9,
+      "brand": "Graf",
+      "description": "Bomba de agua de alta presión",
+      "sku": "REF-BOMB-016"
+    },
+    {
+      "id": 17,
+      "name": "Kit de Distribución Completo",
+      "category": "Transmisión",
+      "price": 150.00,
+      "stock": 8,
+      "brand": "INA",
+      "description": "Kit con correa, tensores y rodillos",
+      "sku": "TRANS-KIT-017"
+    },
+    {
+      "id": 18,
+      "name": "Sensor de Oxígeno",
+      "category": "Sensores",
+      "price": 85.00,
+      "stock": 12,
+      "brand": "Bosch",
+      "description": "Sensor lambda de oxígeno",
+      "sku": "SENS-OXI-018"
+    },
+    {
+      "id": 19,
+      "name": "Líquido de Frenos DOT 4",
+      "category": "Frenos",
+      "price": 10.00,
+      "stock": 45,
+      "brand": "ATE",
+      "description": "Líquido de frenos sintético 500ml",
+      "sku": "FRE-LIQ-019"
+    },
+    {
+      "id": 20,
+      "name": "Rótula de Suspensión",
+      "category": "Suspensión",
+      "price": 35.00,
+      "stock": 18,
+      "brand": "TRW",
+      "description": "Rótula de suspensión delantera",
+      "sku": "SUSP-ROT-020"
+    }
+  ]
+}
