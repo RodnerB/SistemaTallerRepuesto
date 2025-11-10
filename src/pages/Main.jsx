@@ -4,14 +4,17 @@ import ShoppingCart from '../assets/ShoppingCart.jsx';
 import PlusIcon from '../assets/PlusIcon.jsx';
 import Header from '../components/Header.jsx';
 function Main() {
-    const principalBtn = {
-        icon: ShoppingCart,
-        text: 'Nueva Venta'
-    }
-    const secundaryBtn = {
-        icon: PlusIcon,
-        text: 'Nuevo Producto'
-    }
+    const botones = [
+        {
+            icon: ShoppingCart,
+            text: 'Nueva Venta'
+        },
+        {
+            icon: PlusIcon,
+            text: 'Nuevo Producto'
+        }
+    ]
+    const [principalBtn, secundaryBtn] = botones;
     return (
         <main className='main'>
             <Header title="DashBoard" 
