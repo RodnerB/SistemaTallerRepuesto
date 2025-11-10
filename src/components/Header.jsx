@@ -1,4 +1,4 @@
-export default function Header({title, principalBtn = null, secundaryBtn = null}) {
+export default function Header({title, principalBtn , secundaryBtn}) {
     const { icon: PrincipalIcon, text: principalText } = principalBtn || {};
     const { icon: SecundaryIcon, text: secundaryText } = secundaryBtn || {};
     return (
@@ -6,11 +6,11 @@ export default function Header({title, principalBtn = null, secundaryBtn = null}
             <h1>{title}</h1>
             <div className="btn-container">
                 {principalBtn && <button className='btn btn-principal'>
-                    <PrincipalIcon/>
+                    {PrincipalIcon && <PrincipalIcon/>}
                     {principalText}
                     </button>}
-                { secundaryBtn && <button className='btn btn-secundario'>
-                    <SecundaryIcon/>
+                {secundaryBtn && <button className='btn btn-secundario'>
+                    {SecundaryIcon && <SecundaryIcon/>}
                     {secundaryText}
                 </button>}
                 </div>
