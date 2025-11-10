@@ -1,23 +1,25 @@
 import Header from '../components/Header.jsx';
-import Salir from '../utils/Salir.jsx';
+
+import ShoppingCart from '../assets/ShoppingCart.jsx';
+import NuevaVenta from '../components/NuevaVenta.jsx';
 import './Venta.css';
 export default function Venta(){
     const ventaTitle = "Nueva venta";
+    const botones = [
+        {
+            icon: ShoppingCart,
+            text: 'Nueva Venta'
+        },
+        {
+            icon: null,
+            text: 'Cobrar Factura'
+        }
+    ]
+    const [principalBtn, secundaryBtn] = botones;
     return (
         <main className="main">
-            <Header title={ventaTitle}/>
-            <section className='product-selector container'>
-                <header className='product-header'>
-                    <section className='title-header'>
-                        <h3>Añadir Productos</h3>
-                        <Salir/>
-                    </section>
-                    <form className='product-search' role='search'>
-                        <label className='search' htmlFor="product">Buscar Productos</label>
-                        <input id="product"  className="product-input" name="product" type="text" placeholder='Buscar producto...'/>
-                    </form>
-                </header>            
-            </section>
+            <Header title={ventaTitle} principalBtn={principalBtn} secundaryBtn={secundaryBtn}/>
+            <NuevaVenta/>
         </main>
     )
 }
