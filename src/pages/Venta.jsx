@@ -1,30 +1,16 @@
-import Header from '../components/Header.jsx';
-import { useState } from 'react';
-import ShoppingCart from '../assets/ShoppingCart.jsx';
-import NuevaVenta from '../components/NuevaVenta.jsx';
-import './Venta.css';
+import Header from '../components/Header.jsx'
+import { useState } from 'react'
+import NuevaVenta from '../components/NuevaVenta.jsx'
+import './Venta.css'
+import { ventaButtons } from '../constants/buttons.js'
 export default function Venta(){
-    const [isModalOpen, setIsModalOpen] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false)
     
-    const handleOpenModal = () => setIsModalOpen(true);
-    
-
-    const handleCloseModal = () => setIsModalOpen(false);
+    const handleOpenModal = () => setIsModalOpen(true)
+    const handleCloseModal = () => setIsModalOpen(false)
    
-    const ventaTitle = "Nueva venta";
-    const botones = [
-        {
-            icon: ShoppingCart,
-            text: 'Nueva Venta',
-            action: handleOpenModal
-
-        },
-        {
-            icon: null,
-            text: 'Cobrar Factura'
-        }
-    ]
-    const [principalBtn, secundaryBtn] = botones;
+    const ventaTitle = "Nueva venta"
+    const [principalBtn, secundaryBtn] = ventaButtons(handleOpenModal)
     return (
         <main className="main">
             <Header title={ventaTitle} principalBtn={principalBtn} secundaryBtn={secundaryBtn}/>

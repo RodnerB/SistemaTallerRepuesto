@@ -1,20 +1,9 @@
-import { useState } from 'react'
+
 import './Main.css'
-import ShoppingCart from '../assets/ShoppingCart.jsx';
-import PlusIcon from '../assets/PlusIcon.jsx';
 import Header from '../components/Header.jsx';
+import { mainButtons } from '../constants/buttons.js';
 function Main() {
-    const botones = [
-        {
-            icon: ShoppingCart,
-            text: 'Nueva Venta'
-        },
-        {
-            icon: PlusIcon,
-            text: 'Nuevo Producto'
-        }
-    ]
-    const [principalBtn, secundaryBtn] = botones;
+    const [principalBtn, secundaryBtn] = mainButtons();
     return (
         <main className='main'>
             <Header title="DashBoard" 
