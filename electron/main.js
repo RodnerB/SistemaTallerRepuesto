@@ -10,11 +10,14 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, 'preload.js'),
+            preload: path.join(__dirname, 'preload.cjs'),
             nodeIntegration: false,
             contextIsolation: true
         }
     })
+
+    // Abrir DevTools para debugging
+    // win.webContents.openDevTools()
 
     // En desarrollo carga desde el servidor de Vite
     if (process.env.VITE_DEV_SERVER_URL) {
